@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-int main() {
-    int i = 1;
-    float j = 1.00;
-    while(i <= 10) {
-        printf("%d   %.2f\n", i, j);
-        j += 0.10;
+int main() 
+   {
+    int i=1;
+    float j=1.00;
+    while(i<=10) 
+    {
+        printf("%d\t%.2f\n",i,j);
+        j+=0.10;
         i++;
     }
     return 0;
