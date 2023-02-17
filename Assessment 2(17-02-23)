@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+ {
+    int n,k,i=1,evensum=0,oddsum=0;
+    printf("Enter the value of n and k: ");
+    scanf("%d %d",&n,&k);
+    printf("Numbers divisible by %d are: ",k);
+    while(i<=n)
+     {
+        if(i%k==0) 
+       {
+            printf("%d ",i);
+            if(i%2==0) 
+         {
+                evensum+=i;
+            }
+            else {
+                oddsum+=i;
+            }
+        }
+        i++;
+    }
+    printf("\nEven sum is %d and Odd sum is %d", evensum,oddsum);
+    return 0;
+}
