@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+int n, i=1, num, highest = 0, secondHighest = 0;
+printf("enter how many number do you want to compare:");
+scanf("%d",&n);
+while (i<=n)
+{
+    printf("enter the number:");
+    scanf("%d",&num);
+if (num > highest) 
+{
+secondHighest = highest;
+highest = num;
+} 
+else if (num > secondHighest && num < highest) 
+{
+secondHighest = num;
+}
+i++;
+}
+printf("The second highest number is: %d", secondHighest);
+return 0;
+}
